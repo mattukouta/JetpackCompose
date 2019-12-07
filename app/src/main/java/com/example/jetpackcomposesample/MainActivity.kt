@@ -27,14 +27,24 @@ class MainActivity : AppCompatActivity() {
                     /**
                      * ボタン作成
                      */
-                    Button(onClick = { startActivity(Intent(this@MainActivity, GreetingActivity::class.java)) }, style = MainListButtonStyle(), text = "Greeting")
+                    Button(onClick = { moveActivity(GreetingActivity::class.java) }, style = MainListButtonStyle(), text = "Greeting")
 
-                    Button(onClick = { startActivity(Intent(this@MainActivity, ListViewActivity::class.java)) }, style = MainListButtonStyle(), text = "List")
+                    Divider(color = Color(0x44666666))
 
-                    Button(onClick = { startActivity(Intent(this@MainActivity, ImageActivity::class.java)) }, style = MainListButtonStyle(), text = "Image")
+                    Button(onClick = { moveActivity(ListViewActivity::class.java) }, style = MainListButtonStyle(), text = "List")
+
+                    Divider(color = Color(0x44666666))
+
+                    Button(onClick = { moveActivity(ImageActivity::class.java) }, style = MainListButtonStyle(), text = "Image")
                 }
             }
         }
+    }
+
+    fun moveActivity(clazz: Class<*>) {
+        val intent = Intent(this@MainActivity, clazz)
+        startActivity(intent)
+        overridePendingTransition(0, 0)
     }
 }
 
