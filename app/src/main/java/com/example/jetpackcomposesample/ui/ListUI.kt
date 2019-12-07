@@ -1,4 +1,4 @@
-package com.example.jetpackcomposesample
+package com.example.jetpackcomposesample.ui
 
 import android.widget.Toast
 import androidx.compose.Composable
@@ -11,7 +11,7 @@ import androidx.ui.material.ListItem
 import androidx.ui.material.MaterialTheme
 
 @Composable
-fun createList(context: Context) {
+fun createListUI(context: Context) {
 
     val fruitList = arrayOf("りんご", "いちご", "みかん", "なし", "パイナップル", "スイカ", "メロン", "さくらんぼ", "バナナ", "キウイ", "ぶどう", "レモン")
 

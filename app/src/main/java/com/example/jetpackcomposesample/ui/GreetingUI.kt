@@ -1,4 +1,4 @@
-package com.example.jetpackcomposesample
+package com.example.jetpackcomposesample.ui
 
 import androidx.compose.Composable
 import androidx.ui.core.Text
@@ -8,7 +8,7 @@ import androidx.ui.tooling.preview.Preview
 
 @Preview("Greeting")
 @Composable
-fun greeting() {
+fun createGreetingUI() {
     greetingView("jetpackCompose")
 }
 
