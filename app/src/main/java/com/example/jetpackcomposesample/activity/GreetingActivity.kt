@@ -1,9 +1,10 @@
-package com.example.jetpackcomposesample
+package com.example.jetpackcomposesample.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.ui.core.setContent
+import com.example.jetpackcomposesample.ui.createGreetingUI
 
 class GreetingActivity : AppCompatActivity() {
 
@@ -14,7 +15,7 @@ class GreetingActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         setContent {
-            greeting()
+            createGreetingUI()
         }
     }
 

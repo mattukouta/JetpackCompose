@@ -1,15 +1,16 @@
-package com.example.jetpackcomposesample
+package com.example.jetpackcomposesample.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.ui.core.setContent
+import com.example.jetpackcomposesample.ui.createImageUI
 
 class ImageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { test() }
+        setContent { createImageUI() }
 
         title = "ImageView"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

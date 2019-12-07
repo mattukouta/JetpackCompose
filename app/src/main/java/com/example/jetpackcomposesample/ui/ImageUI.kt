@@ -1,4 +1,4 @@
-package com.example.jetpackcomposesample
+package com.example.jetpackcomposesample.ui
 
 import androidx.compose.Composable
 import androidx.compose.unaryPlus
@@ -9,10 +9,11 @@ import androidx.ui.layout.Container
 import androidx.ui.material.MaterialTheme
 import androidx.ui.res.imageResource
 import androidx.ui.tooling.preview.Preview
+import com.example.jetpackcomposesample.R
 
 @Preview
 @Composable
-fun test() {
+fun createImageUI() {
     MaterialTheme {
         Center {
             Container(height = 300.dp, width = 300.dp) {

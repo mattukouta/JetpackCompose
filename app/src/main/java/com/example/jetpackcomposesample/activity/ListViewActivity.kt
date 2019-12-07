@@ -1,10 +1,10 @@
-package com.example.jetpackcomposesample
+package com.example.jetpackcomposesample.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.ListView
 import androidx.ui.core.setContent
+import com.example.jetpackcomposesample.ui.createListUI
 
 class ListViewActivity : AppCompatActivity() {
 
@@ -14,7 +14,7 @@ class ListViewActivity : AppCompatActivity() {
         title = "ListView"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        setContent { createList(this@ListViewActivity) }
+        setContent { createListUI(this@ListViewActivity) }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
