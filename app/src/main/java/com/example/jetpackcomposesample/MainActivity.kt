@@ -20,7 +20,12 @@ class MainActivity : AppCompatActivity() {
         setContent {
             MaterialTheme {
                 Column {
+                    /**
+                     * ボタン作成
+                     */
                     Button(onClick = { startActivity(Intent(this@MainActivity, GreetingActivity::class.java)) }, style = TextButtonStyle(), text = "Greeting")
+
+                    Button(onClick = { startActivity(Intent(this@MainActivity, ListViewActivity::class.java)) }, style = TextButtonStyle(), text = "List")
                 }
             }
         }
