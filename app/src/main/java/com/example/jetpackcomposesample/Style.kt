@@ -8,6 +8,7 @@ import androidx.ui.material.ButtonStyle
 import androidx.ui.material.themeColor
 import androidx.ui.material.themeShape
 import androidx.ui.text.TextStyle
+import androidx.ui.text.font.FontFamily
 
 fun MainListButtonStyle(
     shape: Shape = +themeShape { button },
@@ -18,3 +19,6 @@ fun MainListButtonStyle(
     textStyle = TextStyle(color = contentColor, fontSize = 20.sp),
     rippleColor = contentColor
 )
+
+fun originalAppBarTextStyle() = TextStyle(color = Color.White)
+fun originalTextViewStyle() = TextStyle(color = Color.Red, fontSize = 30.sp, fontFamily = FontFamily.Cursive)

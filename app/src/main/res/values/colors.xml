@@ -3,4 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="originalAppBarPrimary">#FF339933</color>
+    <color name="originalAppBarPrimaryDark">#FF336633</color>
+    <color name="originalAppBarAccent">#FFcc3300</color>
 </resources>
