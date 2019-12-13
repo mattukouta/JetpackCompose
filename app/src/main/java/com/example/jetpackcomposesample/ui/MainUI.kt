@@ -7,10 +7,7 @@ import androidx.ui.material.Button
 import androidx.ui.material.Divider
 import androidx.ui.material.MaterialTheme
 import com.example.jetpackcomposesample.MainListButtonStyle
-import com.example.jetpackcomposesample.activity.GreetingActivity
-import com.example.jetpackcomposesample.activity.ImageActivity
-import com.example.jetpackcomposesample.activity.ListViewActivity
-import com.example.jetpackcomposesample.activity.MainActivity
+import com.example.jetpackcomposesample.activity.*
 
 @Composable
 fun createMainUI(view: MainActivity) {
@@ -29,6 +26,9 @@ fun createMainUI(view: MainActivity) {
 
             Button(onClick = { view.moveActivity(ImageActivity::class.java) }, style = MainListButtonStyle(), text = "Image")
 
+            Divider(color = Color(0x44666666))
+
+            Button(onClick = { view.moveActivity(AppBarActivity::class.java) }, style = MainListButtonStyle(), text = "AppBar")
         }
     }
 }

@@ -11,8 +11,8 @@ class GreetingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        title = "GreetingView"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+//        title = "GreetingView"
+//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         setContent {
             createGreetingUI()
