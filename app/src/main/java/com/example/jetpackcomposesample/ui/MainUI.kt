@@ -29,6 +29,10 @@ fun createMainUI(view: MainActivity) {
             Divider(color = Color(0x44666666))
 
             Button(onClick = { view.moveActivity(AppBarActivity::class.java) }, style = MainListButtonStyle(), text = "AppBar")
+
+            Divider(color = Color(0x44666666))
+
+            Button(onClick = { view.moveActivity(EditTextActivity::class.java) }, style = MainListButtonStyle(), text = "EditText")
         }
     }
 }
